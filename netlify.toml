@@ -5,3 +5,4 @@
 [build.environment]
   SHARP_IGNORE_GLOBAL_LIBVIPS = "true"
   NPM_FLAGS = "--platform=linux --arch=x64"
+  NODE_VERSION = "20"
