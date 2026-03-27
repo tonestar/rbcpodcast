@@ -12,7 +12,16 @@
     "preview": "astro preview",
     "astro": "astro",
     "cms": "netlify-cms-proxy-server",
-    "dev:cms": "concurrently \"npm run dev\" \"npm run cms\""
+    "dev:cms": "concurrently \"npm run dev\" \"npm run cms\"",
+    "sermons:discover": "node scripts/scrape-sermons.mjs --discover",
+    "sermons:upload": "node scripts/scrape-sermons.mjs",
+    "sermons:list": "node scripts/scrape-sermons.mjs --list-series",
+    "sermons:stats": "node -e \"const m=JSON.parse(require('fs').readFileSync('scripts/sermon-manifest.json'));const s={};m.forEach(e=>s[e.status]=(s[e.status]??0)+1);console.log(s)\"",
+    "sermons:skipped": "node -e \"const m=JSON.parse(require('fs').readFileSync('scripts/sermon-manifest.json'));m.filter(e=>e.status==='skipped').forEach(e=>console.log(e.date,e.title))\"",
+    "sermons:verify": "node scripts/scrape-sermons.mjs --verify",
+    "sermons:fix-metadata": "node scripts/scrape-sermons.mjs --fix-metadata",
+    "sermons:upload-all": "node scripts/scrape-sermons.mjs --upload-all",
+    "sermons:generate": "node scripts/generate-episodes.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",
@@ -27,16 +36,28 @@
   },
   "pnpm": {
     "supportedArchitectures": {
-      "os": ["current", "linux"],
-      "cpu": ["current", "x64"],
-      "libc": ["current", "glibc"]
+      "os": [
+        "current",
+        "linux"
+      ],
+      "cpu": [
+        "current",
+        "x64"
+      ],
+      "libc": [
+        "current",
+        "glibc"
+      ]
     }
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1018.0",
     "@tailwindcss/typography": "^0.5.9",
     "@tailwindcss/vite": "^4.0.0",
     "astro-robots-txt": "^0.5.0",
+    "cheerio": "^1.2.0",
     "concurrently": "^9.0.0",
+    "music-metadata": "^11.12.3",
     "netlify-cms-proxy-server": "^1.3.0",
     "tailwindcss": "^4.0.0"
   }

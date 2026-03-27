@@ -11,6 +11,10 @@ const episodeSchema = z.object({
     episodeType: z.string().optional(),
     duration: z.coerce.string(), //duration in format hh:mm:ss
     size: z.number(), // size in megabytes
+    // Rolleston Baptist fields
+    category: z.enum(["sermon", "seminar"]).optional(),
+    series: z.string().optional(),
+    speaker: z.string().optional(),
 });
 
 export type episodeSchema = z.infer<typeof episodeSchema>;
