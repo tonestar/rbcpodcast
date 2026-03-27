@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 9, 2009
+title: The Age of the Holy Spirit
 audioUrl: /audio/A20091009-Amillenialism.mp3
 pubDate: Oct 9 2009
 duration: 46:00
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-This October 9, 2009 episode continues our exploration of Amillennialism, focusing on the New Testament's reinterpretation of Old Testament prophecies.
+The outpouring of the Holy Spirit at Pentecost marks the dawn of the eschatological age foretold by the Old Testament prophets. Riddlebarger examines Joel 2, Acts 2, and Paul's teaching on the Spirit as the "first fruits" and "guarantee" of the age to come. He argues that the Spirit's present work — in regeneration, sanctification, and gifting the Church — is itself an eschatological reality, confirming that the last days have already begun.

@@ -11,7 +11,7 @@ import { marked } from "marked";
 const lastBuildDate = dayjs().format("ddd, DD MMM YYYY hh:mm:ss ZZ");
 const cover = isFullUrl(astropodConfig.cover) ? astropodConfig.cover : astropodConfig.link + astropodConfig.cover;
 
-export async function get(context) {
+export async function GET(context) {
   let podcast = {
     rss: {
       $: {
@@ -121,9 +121,9 @@ export async function get(context) {
   let builder = new xml2js.Builder({cdata: true});
   let xml = builder.buildObject(podcast);
 
-  return {
-    body: xml,
-  };
+  return new Response(xml, {
+    headers: { "Content-Type": "application/xml" },
+  });
 }
 
 function isFullUrl(urlString) {

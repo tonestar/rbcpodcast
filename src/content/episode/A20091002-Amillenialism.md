@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 2, 2009
+title: The Kingdom of God, Part 2
 audioUrl: /audio/A20091002-Amillenialism.mp3
 pubDate: Oct 2 2009
 duration: 44:45
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In our October 2, 2009 discussion on Amillennialism, we address the relationship between the church and Israel from an Amillennial perspective.
+Continuing the kingdom discussion from Part 1, Riddlebarger examines the present and future dimensions of God's kingdom, the relationship between church and kingdom, and the eschatological tension between kingdom now and kingdom not yet. He responds to dispensationalist objections that amillennialism collapses the distinction between the church and Israel's promised kingdom.

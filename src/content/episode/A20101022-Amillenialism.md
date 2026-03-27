@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 22, 2010
+title: The Olivet Discourse, Part 2
 audioUrl: /audio/A20101022-Amillenialism.mp3
 pubDate: Oct 22 2010
 duration: 45:45
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-Continuing our October 2010 series on Amillennialism, this episode explores the concept of inaugurated eschatology and its significance for Amillennial theology.
+The concluding lecture on Matthew 24 covers the cosmic signs, the parousia of the Son of Man, and the gathering of the elect (vv. 29–51). Riddlebarger examines the "this generation" saying, the unknown day and hour, and the parables of readiness that close the discourse, drawing out the practical call to watchfulness with which the Olivet Discourse ends.

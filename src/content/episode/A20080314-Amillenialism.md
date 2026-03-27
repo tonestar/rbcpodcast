@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - March 14, 2008
+title: These Things Were Foretold
 audioUrl: /audio/A20080314-Amillenialism.mp3
 pubDate: Mar 14 2008
 duration: 47:15
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In this March 14, 2008 installment of our Amillennialism series, we compare and contrast Amillennialism with other eschatological views such as Premillennialism and Postmillennialism.
+Drawing on key Old Testament prophetic passages, Riddlebarger shows how the Hebrew prophets spoke forward to realities already fulfilled in Christ's first advent and the establishment of the church. He traces the logic of typological fulfillment and argues that many texts dispensationalists regard as awaiting a future fulfillment are in fact already accomplished in principle in Christ.

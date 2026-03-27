@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - February 5, 2010
+title: The Suffering Church
 audioUrl: /audio/A20100205-Amillenialism.mp3
 pubDate: Feb 5 2010
 duration: 47:15
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-Beginning our 2010 discussions on Amillennialism, this February 5 episode examines the Amillennial understanding of the second coming of Christ and final judgment.
+Riddlebarger turns to the pastoral dimension of amillennial eschatology, examining how the New Testament's expectation of tribulation, persecution, and suffering shapes the amillennial vision. Drawing from Revelation 6–7 and related texts, he argues that the seals, trumpets, and bowls describe the ongoing experience of the church in a hostile world, not a discrete set of future judgments awaiting a tribulation period.

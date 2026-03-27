@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - November 7, 2008
+title: The Two-Age Model, Part 1
 audioUrl: /audio/A20081107-Amillenialism.mp3
 pubDate: Nov 7 2008
 duration: 47:30
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-This November 7, 2008 episode on Amillennialism examines the concept of the millennium as presented in Revelation 20 and how it is understood in Amillennial thought.
+The Jewish concept of "this age" and "the age to come" provides the fundamental eschatological grid for the New Testament. Riddlebarger introduces this two-age model, showing how it underlies Paul's letters, the Gospels, and Revelation. Crucially, he argues that Christ's resurrection marks the inauguration of the age to come, meaning Christians already live in the overlap of the two ages.

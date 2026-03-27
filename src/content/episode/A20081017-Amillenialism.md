@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 17, 2008
+title: "Christ: The True Israel"
 audioUrl: /audio/A20081017-Amillenialism.mp3
 pubDate: Oct 17 2008
 duration: 44:30
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-Continuing our series on October 17, 2008, we delve deeper into the implications of Amillennial theology for Christian living and eschatological hope.
+One of the pivotal lectures in the series. Riddlebarger explores how Jesus recapitulates the history of Israel, fulfilling what Israel failed to accomplish, and becomes the true embodiment of all that Israel was called to be. Drawing on Matthew's Gospel and Pauline theology, this lecture challenges the dispensationalist separation of Israel and the church by showing that Christ himself is the Israel of God in whom all the promises are "yes and amen."

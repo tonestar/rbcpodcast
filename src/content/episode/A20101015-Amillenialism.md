@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 15, 2010
+title: The Olivet Discourse, Part 1
 audioUrl: /audio/A20101015-Amillenialism.mp3
 pubDate: Oct 15 2010
 duration: 47:30
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In this October 15, 2010 episode, we examine how the early church fathers viewed eschatology and the development of Amillennial thought in church history.
+Returning to Matthew 24 with the background of Daniel's Seventy Weeks now in place, Riddlebarger re-reads the Olivet Discourse with fresh eyes. This lecture covers verses 1–28 and shows how the disciples' question, Jesus' warnings, and the reference to Daniel's abomination are best understood in terms of the imminent destruction of Jerusalem in AD 70, with ongoing lessons for the church in every age.

@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - October 24, 2008
+title: "Christ: The True Temple"
 audioUrl: /audio/A20081024-Amillenialism.mp3
 pubDate: Oct 24 2008
 duration: 46:15
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In our October 24, 2008 discussion on Amillennialism, we address common objections to this theological position and offer responses from an Amillennial perspective.
+Building on the previous lecture, Riddlebarger examines the temple motif in Scripture and shows how Jesus fulfills and replaces the Jerusalem temple. John 2's "destroy this temple," the cleansing narratives, and Hebrews' presentation of Christ as great high priest all converge to demonstrate that the physical temple has given way to Christ himself — and the church as his body — as the living temple of God.

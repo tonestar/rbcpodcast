@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - December 5, 2008
+title: The Two-Age Model and New Testament Parallels
 audioUrl: /audio/A20081205-Amillenialism.mp3
 pubDate: Dec 5 2008
 duration: 46:30
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-Concluding our 2008 discussions on Amillennialism, this December 5 episode explores the relationship between covenant theology and Amillennial eschatology.
+Riddlebarger draws out the structural parallels between the two-age model and a range of New Testament texts frequently cited in eschatological debates. He demonstrates that passages in Matthew 24, 1 Thessalonians 4, and 2 Peter 3, read within the two-age framework, cohere naturally under an amillennial interpretation.

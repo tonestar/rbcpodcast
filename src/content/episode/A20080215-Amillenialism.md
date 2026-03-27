@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - February 15, 2008
+title: What Is Amillennialism?
 audioUrl: /audio/A20080215-Amillenialism.mp3
 pubDate: Feb 15 2008
 duration: 47:15
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-This is the first episode in our Amillennialism series from February 15, 2008. In this episode, we introduce the concept of Amillennialism and lay the groundwork for future discussions on this theological perspective.
+Kim Riddlebarger opens this foundational lecture series by defining amillennialism — the view that the millennium of Revelation 20 refers to the present age between Christ's first and second comings, not a future literal thousand-year reign. He surveys the major millennial positions (premillennialism, postmillennialism, and amillennialism) and explains why the amillennial reading is most faithful to Scripture and the Reformed confessional tradition.

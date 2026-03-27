@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - February 29, 2008
+title: Interpreting Bible Prophecy, Part 2
 audioUrl: /audio/A20080229-Amillenialism.mp3
 pubDate: Feb 29 2008
 duration: 46:45
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In this February 29, 2008 episode on Amillennialism, we discuss how this theological view interprets key biblical prophecies and eschatological passages.
+Continuing the discussion of prophetic hermeneutics, Riddlebarger examines how dispensationalist and Reformed interpreters differ in their foundational assumptions — particularly around Israel and the church. He shows how careful grammatical-historical exegesis, read within its canonical context, leads naturally to amillennial conclusions rather than the futurist or literalist readings popular in evangelical culture.

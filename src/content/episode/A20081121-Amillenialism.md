@@ -1,5 +1,5 @@
 ---
-title: Amillennialism - November 21, 2008
+title: The Two-Age Model, Part 2
 audioUrl: /audio/A20081121-Amillenialism.mp3
 pubDate: Nov 21 2008
 duration: 45:45
@@ -11,4 +11,4 @@ season: 3
 episodeType: full
 ---
 
-In this November 21, 2008 installment of our Amillennialism series, we discuss the binding of Satan and how this concept relates to the present age in Amillennial theology.
+Continuing the exploration of the two-age framework, Riddlebarger traces its implications for understanding the resurrection, the Holy Spirit as the "down payment" of the age to come, and the tension between the "already" and "not yet" in the Christian life. He responds to premillennialist objections and shows how the two-age model supports an amillennial rather than a chiliastic reading of the end.
