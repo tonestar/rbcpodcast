@@ -11,9 +11,10 @@ if (astropodConfig.feedSize)
 import { marked } from "marked";
 
 const lastBuildDate = dayjs().format("ddd, DD MMM YYYY hh:mm:ss ZZ");
-const cover = isFullUrl(astropodConfig.cover)
-  ? astropodConfig.cover
-  : astropodConfig.link + astropodConfig.cover;
+const coverField = astropodConfig.coverSermons || astropodConfig.cover;
+const cover = isFullUrl(coverField)
+  ? coverField
+  : astropodConfig.link + coverField;
 
 export async function GET(context) {
   let podcast = {

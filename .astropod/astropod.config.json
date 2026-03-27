@@ -11,6 +11,8 @@
   "favicon": "/favicon.svg",
   "explicit": false,
   "cover": "/cover.jpg",
+  "coverSermons": "/cover-sermons.jpg",
+  "coverSeminars": "/cover-seminars.jpg",
   "language": "en",
   "link": "https://lucent-strudel-bbfdc9.netlify.app",
   "email": "tonymcbony@gmail.com",
