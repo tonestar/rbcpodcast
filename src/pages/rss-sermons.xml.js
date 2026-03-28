@@ -3,7 +3,9 @@ import dayjs from "dayjs";
 import astropodConfig from "../../.astropod/astropod.config.json";
 import { getCollection } from "astro:content";
 let episode = await getCollection("episode");
-episode = episode.filter((e) => !e.data.category || e.data.category === "sermon");
+episode = episode.filter(
+  (e) => !e.data.category || e.data.category === "sermon",
+);
 episode.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 if (astropodConfig.feedSize)
   episode = episode.slice(0, astropodConfig.feedSize);
