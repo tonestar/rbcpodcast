@@ -11,6 +11,8 @@ series: Easter Sermons
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Easter Sermons  
+**Speaker:** Joe Fleener
+
+**Series:** Easter Sermons
+
 **Topics:** 1 Corinthians, 1 Thessalonians, Matthew

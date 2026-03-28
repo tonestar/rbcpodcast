@@ -11,6 +11,8 @@ series: 2025 Camp - Healthy Church
 speaker: Michael Proligalidad
 ---
 
-**Speaker:** Michael Proligalidad  
-**Series:** 2025 Camp - Healthy Church  
+**Speaker:** Michael Proligalidad
+
+**Series:** 2025 Camp - Healthy Church
+
 **Topics:** Acts

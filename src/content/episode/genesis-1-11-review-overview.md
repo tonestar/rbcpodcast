@@ -11,6 +11,8 @@ series: Genesis
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Genesis  
+**Speaker:** Joe Fleener
+
+**Series:** Genesis
+
 **Topics:** 1 John, Ephesians, Genesis, Hebrews, Romans

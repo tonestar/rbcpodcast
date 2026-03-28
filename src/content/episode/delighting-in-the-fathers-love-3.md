@@ -11,6 +11,8 @@ series: "Delighting in the Father's Love"
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Delighting in the Father's Love  
+**Speaker:** Joe Fleener
+
+**Series:** Delighting in the Father's Love
+
 **Topics:** (Topical)

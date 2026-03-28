@@ -11,6 +11,8 @@ series: Titus
 speaker: Darren Smith
 ---
 
-**Speaker:** Darren Smith  
-**Series:** Titus  
+**Speaker:** Darren Smith
+
+**Series:** Titus
+
 **Topics:** Titus

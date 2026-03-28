@@ -11,6 +11,8 @@ series: Genesis
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Genesis  
+**Speaker:** Joe Fleener
+
+**Series:** Genesis
+
 **Topics:** 2 Samuel, 2 Timothy, Genesis, Romans

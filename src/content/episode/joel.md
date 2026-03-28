@@ -11,6 +11,8 @@ series: Minor Prophets
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Minor Prophets  
+**Speaker:** Joe Fleener
+
+**Series:** Minor Prophets
+
 **Topics:** Joel

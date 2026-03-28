@@ -69,7 +69,7 @@ function buildBody(entry) {
   if (cleanTopics.length) {
     parts.push(`**Topics:** ${cleanTopics.join(", ")}`);
   }
-  return parts.join("  \n");
+  return parts.join("\n\n");
 }
 
 /**

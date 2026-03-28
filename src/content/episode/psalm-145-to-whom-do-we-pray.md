@@ -11,6 +11,8 @@ series: Prayer
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Prayer  
+**Speaker:** Joe Fleener
+
+**Series:** Prayer
+
 **Topics:** Psalms

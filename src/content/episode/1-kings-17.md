@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Darren Smith
 ---
 
-**Speaker:** Darren Smith  
-**Series:** Standalone Sermons  
+**Speaker:** Darren Smith
+
+**Series:** Standalone Sermons
+
 **Topics:** 1 Kings

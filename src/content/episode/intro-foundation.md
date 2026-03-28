@@ -11,6 +11,8 @@ series: Biblical Answers to False Beliefs
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Biblical Answers to False Beliefs  
+**Speaker:** Joe Fleener
+
+**Series:** Biblical Answers to False Beliefs
+
 **Topics:** Acts, Deuteronomy, Isaiah, Matthew, Romans

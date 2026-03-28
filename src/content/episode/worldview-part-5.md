@@ -11,6 +11,8 @@ series: "Equipping for Life: Parenting in the 21st Century"
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Equipping for Life: Parenting in the 21st Century  
+**Speaker:** Joe Fleener
+
+**Series:** Equipping for Life: Parenting in the 21st Century
+
 **Topics:** (Topical)

@@ -11,6 +11,8 @@ series: Doctrines of Grace
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Doctrines of Grace  
+**Speaker:** Joe Fleener
+
+**Series:** Doctrines of Grace
+
 **Topics:** (Topical)

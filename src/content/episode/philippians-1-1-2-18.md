@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Philip Hanson
 ---
 
-**Speaker:** Philip Hanson  
-**Series:** Standalone Sermons  
+**Speaker:** Philip Hanson
+
+**Series:** Standalone Sermons
+
 **Topics:** Philippians

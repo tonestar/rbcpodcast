@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Andrew Sinclair
 ---
 
-**Speaker:** Andrew Sinclair  
-**Series:** Standalone Sermons  
+**Speaker:** Andrew Sinclair
+
+**Series:** Standalone Sermons
+
 **Topics:** (Topical), Romans

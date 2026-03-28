@@ -11,6 +11,8 @@ series: Trinity
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Trinity  
+**Speaker:** Joe Fleener
+
+**Series:** Trinity
+
 **Topics:** (Topical)

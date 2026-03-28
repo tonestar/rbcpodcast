@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: John Simpson
 ---
 
-**Speaker:** John Simpson  
-**Series:** Standalone Sermons  
+**Speaker:** John Simpson
+
+**Series:** Standalone Sermons
+
 **Topics:** Ephesians

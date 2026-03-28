@@ -11,6 +11,8 @@ series: Elders and Deacons
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Elders and Deacons  
+**Speaker:** Joe Fleener
+
+**Series:** Elders and Deacons
+
 **Topics:** 1 Timothy

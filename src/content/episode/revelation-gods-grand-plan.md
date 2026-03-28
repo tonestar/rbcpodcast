@@ -11,6 +11,8 @@ series: Revelation
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Revelation  
+**Speaker:** Joe Fleener
+
+**Series:** Revelation
+
 **Topics:** Matthew, Revelation

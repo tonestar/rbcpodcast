@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Wally Behan
 ---
 
-**Speaker:** Wally Behan  
-**Series:** Standalone Sermons  
+**Speaker:** Wally Behan
+
+**Series:** Standalone Sermons
+
 **Topics:** Deuteronomy

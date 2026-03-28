@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Doug Sinclair
 ---
 
-**Speaker:** Doug Sinclair  
-**Series:** Standalone Sermons  
+**Speaker:** Doug Sinclair
+
+**Series:** Standalone Sermons
+
 **Topics:** Psalms

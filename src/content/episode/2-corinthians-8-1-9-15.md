@@ -11,6 +11,8 @@ series: 2 Corinthians
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** 2 Corinthians  
+**Speaker:** Joe Fleener
+
+**Series:** 2 Corinthians
+
 **Topics:** 1 Chronicles, 2 Corinthians

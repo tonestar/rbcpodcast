@@ -11,6 +11,8 @@ series: Standalone Sermons
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Standalone Sermons  
+**Speaker:** Joe Fleener
+
+**Series:** Standalone Sermons
+
 **Topics:** 1 Timothy

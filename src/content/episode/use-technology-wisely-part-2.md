@@ -11,6 +11,8 @@ series: Ageing to the Glory of God
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Ageing to the Glory of God  
+**Speaker:** Joe Fleener
+
+**Series:** Ageing to the Glory of God
+
 **Topics:** (Topical)

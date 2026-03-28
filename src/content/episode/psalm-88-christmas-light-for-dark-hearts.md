@@ -11,6 +11,8 @@ series: Christmas Sermons
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Christmas Sermons  
+**Speaker:** Joe Fleener
+
+**Series:** Christmas Sermons
+
 **Topics:** Hebrews, John, Psalms

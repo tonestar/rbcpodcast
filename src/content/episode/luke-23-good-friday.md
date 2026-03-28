@@ -11,6 +11,8 @@ series: Easter Sermons
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** Easter Sermons  
+**Speaker:** Joe Fleener
+
+**Series:** Easter Sermons
+
 **Topics:** Luke

@@ -11,5 +11,6 @@ series: 1 Corinthians
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
+**Speaker:** Joe Fleener
+
 **Series:** 1 Corinthians

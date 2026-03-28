@@ -11,6 +11,8 @@ series: Christmas Sermons
 speaker: Philip Hanson
 ---
 
-**Speaker:** Philip Hanson  
-**Series:** Christmas Sermons  
+**Speaker:** Philip Hanson
+
+**Series:** Christmas Sermons
+
 **Topics:** Matthew

@@ -11,6 +11,8 @@ series: James
 speaker: Philip Hanson
 ---
 
-**Speaker:** Philip Hanson  
-**Series:** James  
+**Speaker:** Philip Hanson
+
+**Series:** James
+
 **Topics:** James

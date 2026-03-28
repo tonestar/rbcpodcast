@@ -11,6 +11,8 @@ series: Camp
 speaker: Alan Collins
 ---
 
-**Speaker:** Alan Collins  
-**Series:** Camp  
+**Speaker:** Alan Collins
+
+**Series:** Camp
+
 **Topics:** 2 Samuel

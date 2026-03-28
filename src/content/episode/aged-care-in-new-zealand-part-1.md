@@ -11,6 +11,8 @@ series: Ageing to the Glory of God
 speaker: Philip Hanson
 ---
 
-**Speaker:** Philip Hanson  
-**Series:** Ageing to the Glory of God  
+**Speaker:** Philip Hanson
+
+**Series:** Ageing to the Glory of God
+
 **Topics:** (Topical)

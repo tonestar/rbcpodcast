@@ -11,5 +11,6 @@ series: 1689 Baptist Confession Overview
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
+**Speaker:** Joe Fleener
+
 **Series:** 1689 Baptist Confession Overview

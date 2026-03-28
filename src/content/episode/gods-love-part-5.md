@@ -11,6 +11,8 @@ series: "The Doctrine of God's Love"
 speaker: Joe Fleener
 ---
 
-**Speaker:** Joe Fleener  
-**Series:** The Doctrine of God's Love  
+**Speaker:** Joe Fleener
+
+**Series:** The Doctrine of God's Love
+
 **Topics:** (Topical)
