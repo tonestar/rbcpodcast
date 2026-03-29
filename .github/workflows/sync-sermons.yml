@@ -60,4 +60,5 @@ jobs:
           git add scripts/sermon-manifest.json src/content/episode/
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: sync sermons $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
