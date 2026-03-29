@@ -124,10 +124,11 @@ for (const entry of done) {
   const filePath = resolve(OUTPUT_DIR, filename);
   const content = buildMarkdown(entry);
 
-  // Check if existing file is already up to date (same audioUrl)
+  // Check if existing file is already up to date (same audioUrl and duration)
   if (!FORCE && existsSync(filePath)) {
     const existing = readFileSync(filePath, "utf-8");
-    if (existing.includes(`audioUrl: ${entry.r2Url}`)) {
+    const duration = entry.duration ?? "0:00:00";
+    if (existing.includes(`audioUrl: ${entry.r2Url}`) && existing.includes(`duration: "${duration}"`)) {
       skipped++;
       continue;
     }
