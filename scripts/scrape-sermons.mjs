@@ -327,7 +327,7 @@ function parseSermonPage(html, url) {
     topics = topicsMatch[1]
       .split("|")
       .map((t) => t.trim())
-      .filter((t) => t && !t.startsWith("More Messages"));
+      .filter((t) => t && !t.startsWith("More Messages") && t.length < 60 && !t.includes("\n") && !t.toLowerCase().includes("download"));
   }
 
   // Google Drive link from "Download Audio" anchor
