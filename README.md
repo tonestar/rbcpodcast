@@ -24,18 +24,18 @@ Automated podcast pipeline for [Rolleston Baptist Church](https://www.rollestonb
 
 ## Key files
 
-| File | Purpose |
-|---|---|
-| `scripts/scrape-sermons.mjs` | Main scraper/uploader — discovery, upload, verify, fix-metadata |
-| `scripts/generate-episodes.mjs` | Reads manifest, writes episode `.md` files |
-| `scripts/sermon-manifest.json` | Source of truth — 337 entries with status, metadata, R2 keys |
-| `scripts/audio-overrides.json` | Manual Google Drive ID overrides for pages with no audio link |
-| `scripts/.env` | Local R2 credentials (gitignored) |
-| `.astropod/astropod.config.json` | Site name, description, cover art, RSS config |
-| `src/content/config.ts` | Astro content schema (includes `category`, `series`, `speaker`) |
-| `src/pages/rss-sermons.xml.js` | Sermons-only RSS feed |
-| `src/pages/rss-seminars.xml.js` | Seminars-only RSS feed |
-| `.github/workflows/sync-sermons.yml` | Weekly GitHub Actions sync workflow |
+| File                                 | Purpose                                                         |
+| ------------------------------------ | --------------------------------------------------------------- |
+| `scripts/scrape-sermons.mjs`         | Main scraper/uploader — discovery, upload, verify, fix-metadata |
+| `scripts/generate-episodes.mjs`      | Reads manifest, writes episode `.md` files                      |
+| `scripts/sermon-manifest.json`       | Source of truth — 337 entries with status, metadata, R2 keys    |
+| `scripts/audio-overrides.json`       | Manual Google Drive ID overrides for pages with no audio link   |
+| `scripts/.env`                       | Local R2 credentials (gitignored)                               |
+| `.astropod/astropod.config.json`     | Site name, description, cover art, RSS config                   |
+| `src/content/config.ts`              | Astro content schema (includes `category`, `series`, `speaker`) |
+| `src/pages/rss-sermons.xml.js`       | Sermons-only RSS feed                                           |
+| `src/pages/rss-seminars.xml.js`      | Seminars-only RSS feed                                          |
+| `.github/workflows/sync-sermons.yml` | Weekly GitHub Actions sync workflow                             |
 
 ---
 
