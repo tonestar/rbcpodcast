@@ -61,11 +61,17 @@ function yamlStr(value) {
 function buildBody(entry) {
   const parts = [];
   if (entry.speaker) parts.push(`**Speaker:** ${entry.speaker}`);
-  if (entry.series)  parts.push(`**Series:** ${entry.series}`);
+  if (entry.series) parts.push(`**Series:** ${entry.series}`);
   // topics can contain scraper noise — filter to short clean strings only
   const cleanTopics = (entry.topics ?? [])
     .map((t) => t.trim())
-    .filter((t) => t.length > 0 && t.length < 60 && !t.includes("\n") && !t.toLowerCase().includes("download"));
+    .filter(
+      (t) =>
+        t.length > 0 &&
+        t.length < 60 &&
+        !t.includes("\n") &&
+        !t.toLowerCase().includes("download"),
+    );
   if (cleanTopics.length) {
     parts.push(`**Topics:** ${cleanTopics.join(", ")}`);
   }
@@ -93,8 +99,8 @@ function buildMarkdown(entry) {
     `episodeType: full`,
   );
   if (entry.category) lines.push(`category: ${entry.category}`);
-  if (entry.series)   lines.push(`series: ${yamlStr(entry.series)}`);
-  if (entry.speaker)  lines.push(`speaker: ${yamlStr(entry.speaker)}`);
+  if (entry.series) lines.push(`series: ${yamlStr(entry.series)}`);
+  if (entry.speaker) lines.push(`speaker: ${yamlStr(entry.speaker)}`);
   lines.push("---", "", buildBody(entry));
 
   return lines.join("\n") + "\n";
@@ -103,14 +109,18 @@ function buildMarkdown(entry) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 if (!existsSync(MANIFEST_FILE)) {
-  console.error("No manifest found at scripts/sermon-manifest.json. Run --discover first.");
+  console.error(
+    "No manifest found at scripts/sermon-manifest.json. Run --discover first.",
+  );
   process.exit(1);
 }
 
 const manifest = JSON.parse(readFileSync(MANIFEST_FILE, "utf-8"));
 const done = manifest.filter((e) => e.status === "done" && e.r2Url && e.slug);
 
-console.log(`Manifest: ${manifest.length} total, ${done.length} done entries.\n`);
+console.log(
+  `Manifest: ${manifest.length} total, ${done.length} done entries.\n`,
+);
 
 if (!DRY_RUN) mkdirSync(OUTPUT_DIR, { recursive: true });
 
@@ -128,7 +138,10 @@ for (const entry of done) {
   if (!FORCE && existsSync(filePath)) {
     const existing = readFileSync(filePath, "utf-8");
     const duration = entry.duration ?? "0:00:00";
-    if (existing.includes(`audioUrl: ${entry.r2Url}`) && existing.includes(`duration: "${duration}"`)) {
+    if (
+      existing.includes(`audioUrl: ${entry.r2Url}`) &&
+      existing.includes(`duration: "${duration}"`)
+    ) {
       skipped++;
       continue;
     }

@@ -1,117 +1,134 @@
-# Astropod | Free and Open Source Serverless Podcast
+# Rolleston Baptist Church Podcast
 
-![Atropod](https://github.com/manuelernestog/manuelernestog/assets/53962116/3106bf65-37f9-427f-9b50-72d7ae22752f)
+Automated podcast pipeline for [Rolleston Baptist Church](https://www.rollestonbaptist.org.nz/). Scrapes sermons and seminars from the church website, uploads audio to Cloudflare R2, generates episode markdown files, and publishes two RSS feeds — one for sermons, one for seminars. Built on [Astropod](https://getastropod.netlify.app) (Astro-based podcast template) and deployed to Netlify.
 
-Astropod is a free and open-source self-hosting serverless podcast solution. It supports diverse deployment services and audio hosting options and includes a customizable website deployable in a few clicks, with a personalized domain and a user-friendly CMS for effortless podcast management.
-
----
-
-## Demo and Tutorial
-
-View a live demo and a tutorial step by step of how deploy and configure your podcast with Astropod.
-
-👉️ <https://getastropod.netlify.app>
+**Live site:** https://rbcpodcast.netlify.app  
+**Sermons feed:** https://rbcpodcast.netlify.app/rss-sermons.xml  
+**Seminars feed:** https://rbcpodcast.netlify.app/rss-seminars.xml
 
 ---
 
-## Quick deploy
+## How it works
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy]
+1. **Discover** — scrapes `rollestonbaptist.org.nz/sitemap.xml` for message URLs, visits each page with Cheerio, and extracts title, speaker, date, series, topics, and Google Drive audio link. Results are saved to `scripts/sermon-manifest.json`.
 
-- Click the Deploy button to copy this project to your own GitHub or GitLab account and deploy your podcast with Netlify in minutes. ✨
+2. **Upload** — downloads each audio file from Google Drive, parses duration with `music-metadata`, and uploads to Cloudflare R2 at `{sermons|seminars}/{series-slug}/{year}/{slug}.mp3`.
 
-- Once you’ve got the project set up, you do need to
-[activate Netlify Identity in the Netlify UI][identity], the
-[“Git Gateway”][gateway] to allow e-mail/password authentication and you are ready to go.
+3. **Generate** — reads the manifest and writes `src/content/episode/{slug}.md` for every uploaded entry, with full frontmatter including `audioUrl`, `pubDate`, `duration`, `size`, `category`, `series`, and `speaker`.
+
+4. **Publish** — a GitHub Actions workflow runs every Monday at 6pm NZ time, runs all three steps automatically, commits any new files, and pushes — triggering a Netlify redeploy.
+
+**Series categorisation** — series names in the `SEMINAR_SERIES` set in `scripts/scrape-sermons.mjs` are tagged `category: seminar`; all others are `category: sermon`. The two RSS feeds filter on this field.
 
 ---
 
-## Deployment Services
+## Key files
 
-Astropod is build in the top of [Astro](https://astro.build/) framework and is ready to be deployed in the deployments services like GitHub Pages, Netlify, Vercel, Cloudflare, AWS and much more.
+| File | Purpose |
+|---|---|
+| `scripts/scrape-sermons.mjs` | Main scraper/uploader — discovery, upload, verify, fix-metadata |
+| `scripts/generate-episodes.mjs` | Reads manifest, writes episode `.md` files |
+| `scripts/sermon-manifest.json` | Source of truth — 337 entries with status, metadata, R2 keys |
+| `scripts/audio-overrides.json` | Manual Google Drive ID overrides for pages with no audio link |
+| `scripts/.env` | Local R2 credentials (gitignored) |
+| `.astropod/astropod.config.json` | Site name, description, cover art, RSS config |
+| `src/content/config.ts` | Astro content schema (includes `category`, `series`, `speaker`) |
+| `src/pages/rss-sermons.xml.js` | Sermons-only RSS feed |
+| `src/pages/rss-seminars.xml.js` | Seminars-only RSS feed |
+| `.github/workflows/sync-sermons.yml` | Weekly GitHub Actions sync workflow |
 
-The configuration for the deployment varies depending on the platform where you are going to do it. See the [official Astro information](https://docs.astro.build/en/guides/deploy/) to deploy your website.
+---
 
-## File storage
+## Local setup
 
-Astropod is designed to work with any file storage solution.
+```sh
+# Install dependencies
+pnpm install
 
-You can host your podcast files in your own code base inside the folder `public/audio` and this will automatically work with [git LFS](https://git-lfs.com/) but free plans in GitHub and GitLab for LFS are limited so take that in mind.
+# Copy and fill in R2 credentials
+cp scripts/.env.example scripts/.env
 
-You can also host your podcast files in any other cloud storage solution like DropBox, Google Drive, Cloudinary or on your own server. Once you upload your audio file you just need to copy the public URL of the audio file into your episode `AudioUrl` field.
+# Run a discovery pass (scrape metadata, no uploads)
+pnpm sermons:discover
 
-For free unlimited cloud file storage we recommend use [Internet Archive](https://archive.org/).
+# Upload a specific series interactively
+pnpm sermons:upload
 
-## Content Management System
+# Upload all pending entries (no interactive prompt)
+pnpm sermons:upload-all
 
-Astropod is designed in such a way that you can use it directly from the source code by editing the configuration files found in the `/.astropod` folder and modifying the episode markdown files contained in the folder `/src/content/episode`.
+# Backfill missing duration/size from R2
+pnpm sermons:fix-metadata
 
-In order to manage podcast in a simpler way, astropod is configured by default with the CMS Serverless [Decap](https://decapcms.org/) which allows collaborative work, authentication with email or other providers and simple management.
+# Generate episode .md files
+pnpm sermons:generate
 
-For the easiest use of Decap we recommend deploying Astropod on Netlify since the authentication system is integrated into the platform and is configured natively. If you would like to facilitate your own OAuth authentication rather than use Netlify's service or a client side flow like implicit or PKCE, you can use one of this [community-maintained projects](https://decapcms.org/docs/external-oauth-clients/).
+# Verify manifest against live R2 bucket
+pnpm sermons:verify
 
-The fact that Astropod comes configured by default with Decap does not mean that it is the only CMS with which it can work, if you prefer to use another CMS like Sanity, Wordpress, Strapi, Tina, or any other you can follow [Astro's integration guides](https://docs.astro.build/en/guides/cms/) to your integrate your favorite CMS.
+# Start local dev server
+pnpm dev
 
-## Tech Stack
-
-- [Astro](https://astro.build)
-- [Tailwind](https://tailwindcss.com/)
-- [DaisyUI](https://daisyui.com/)
-
-## Requirements
-
-- Node 16.16.0 or higher
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command            | Action                                             |
-| :----------------- | :------------------------------------------------- |
-| `pnpm install`     | Installs dependencies                              |
-| `pnpm run dev`     | Starts local dev & Netlify CMS proxy servers       |
-| `pnpm run build`   | Build your production site to `./dist/`            |
-| `pnpm run preview` | Serve `./dist/` & run the Netlify CMS proxy server |
-
-> These commands are using [`pnpm`][pnpm], but you can choose to use `npm` or `yarn` instead if you prefer.
-
-## Project Structure
-
-```txt
-├── src/
-│   ├── components/         // UI components
-│   ├── content/  
-│   │   ├── episode/        // Podcast episodes folder
-│   ├── layouts/            // UI Layouts
-│   ├── helpers/            // App helpers like static data or functions
-│   └── pages/
-│   │   ├── rss.xml.js/     // Feed RSS generation file
-├── public/                 // Public folder dor media files
-│   ├── audio/              // Git LFS folder for audio storage
-├── .astropod/              // Astropod config files folder
-├── astro.config.mjs        // Astro config file
-├── decap.config.mjs        // Decap CMS config file
+# Build for production
+pnpm build
 ```
 
-## Contributing
+---
 
-Suggestions and pull requests are welcomed! Feel free to open a discussion or an issue for a new feature request or bug.
+## R2 credentials (`scripts/.env`)
 
-One of the best ways of contribute is to grab a [bug report or feature suggestion](https://github.com/manuelernestog/astropod/issues) that has been marked `accepted` and dig in.
+```
+R2_ACCOUNT_ID=
+R2_BUCKET=rolleston-baptist
+R2_PUBLIC_URL=https://pub-78341e7c021e425e874803eed5498bb5.r2.dev
+R2_ACCESS_KEY_ID=
+R2_SECRET_ACCESS_KEY=
+```
 
-Please be wary of working on issues _not_ marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
+The same five values are stored as GitHub Actions repository secrets for the automated workflow.
 
-## License
+---
 
-Astropod is licensed under the MIT license — see the [LICENSE](https://github.com/manuelernestog/astropod/blob/main/LICENSE) file for details.
+## Adding a new seminar series
 
-## Contributors
+If Joe starts a new seminar series that the scraper miscategorises as a sermon, add the series name to the `SEMINAR_SERIES` set in `scripts/scrape-sermons.mjs`, then run:
 
-[![Manuel Ernestog](https://contrib.rocks/image?repo=manuelernestog/astropod)](https://github.com/manuelernestog/astropod/graphs/contributors)
+```sh
+pnpm sermons:generate --force
+git add -A && git commit -m "chore: add <series> to seminar list" && git push
+```
 
-Made with [contrib.rocks](https://contrib.rocks).
+---
 
-[deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/manuelernestog/astropod
-[identity]: https://docs.netlify.com/visitor-access/identity/
-[gateway]: https://docs.netlify.com/visitor-access/git-gateway/
-[pnpm]: https://pnpm.io/
+## Manual audio override
+
+If a sermon page has no Google Drive link but you have a file ID, add it to `scripts/audio-overrides.json`:
+
+```json
+{
+  "https://www.rollestonbaptist.org.nz/messages/some-sermon/": "DRIVE_FILE_ID"
+}
+```
+
+Then reset the entry status to `pending` in `scripts/sermon-manifest.json` and re-run `pnpm sermons:upload`.
+
+---
+
+## Potential improvements
+
+- **Custom domain for R2** — connect `audio.rollestonbaptist.org.nz` (or similar) as a Cloudflare custom domain on the R2 bucket to remove the `r2.dev` rate-limit warning. Update `R2_PUBLIC_URL` in `.env` and the GitHub secret, run `--fix-metadata` and `generate --force`, then push.
+- **Per-series cover art** — add `cover` field to episode frontmatter for series-specific artwork in podcast clients.
+- **Rename repo** — rename GitHub repo and local folder from `astropod` to `rbcpodcast`, update git remote.
+- **Bump GitHub Actions Node version** — actions currently use Node 20 runners (deprecated June 2026); update `actions/checkout`, `actions/setup-node`, and `pnpm/action-setup` to versions supporting Node 24 before June 2026.
+
+---
+
+## Tech stack
+
+- [Astro](https://astro.build) + [Astropod](https://getastropod.netlify.app) — static site framework
+- [Tailwind](https://tailwindcss.com) + [DaisyUI](https://daisyui.com) — styling
+- [Netlify](https://netlify.com) — hosting + CI/CD
+- [Cloudflare R2](https://developers.cloudflare.com/r2/) — audio storage
+- [Cheerio](https://cheerio.js.org) — HTML scraping
+- [music-metadata](https://github.com/borewit/music-metadata) — audio duration parsing
+- [GitHub Actions](https://docs.github.com/en/actions) — weekly automation

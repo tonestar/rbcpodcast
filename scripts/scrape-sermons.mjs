@@ -156,7 +156,9 @@ if (
   !DRY_RUN &&
   !DISCOVER &&
   !LIST_SERIES &&
-  !VERIFY && !FIX_METADATA && !UPLOAD_ALL &&
+  !VERIFY &&
+  !FIX_METADATA &&
+  !UPLOAD_ALL &&
   (!R2_ACCESS_KEY_ID ||
     !R2_SECRET_ACCESS_KEY ||
     !R2_ACCOUNT_ID ||
@@ -327,7 +329,14 @@ function parseSermonPage(html, url) {
     topics = topicsMatch[1]
       .split("|")
       .map((t) => t.trim())
-      .filter((t) => t && !t.startsWith("More Messages") && t.length < 60 && !t.includes("\n") && !t.toLowerCase().includes("download"));
+      .filter(
+        (t) =>
+          t &&
+          !t.startsWith("More Messages") &&
+          t.length < 60 &&
+          !t.includes("\n") &&
+          !t.toLowerCase().includes("download"),
+      );
   }
 
   // Google Drive link from "Download Audio" anchor
@@ -362,7 +371,12 @@ async function downloadAndUpload(fileId, r2Key, label) {
   if (DRY_RUN) {
     console.log(`  [DRY RUN] Would download GDrive ID: ${fileId}`);
     console.log(`  [DRY RUN] Would upload to R2 key:   ${r2Key}`);
-    return { r2Url: `[dry-run]/${r2Key}`, sizeMB: 0, durationSecs: 0, duration: "0:00:00" };
+    return {
+      r2Url: `[dry-run]/${r2Key}`,
+      sizeMB: 0,
+      durationSecs: 0,
+      duration: "0:00:00",
+    };
   }
 
   if (await fileExistsInR2(r2Key)) {
@@ -638,12 +652,23 @@ async function pickSeries(manifest) {
 // ─── Metadata backfill ───────────────────────────────────────────────────────
 
 async function fixMetadata() {
-  if (!existsSync(MANIFEST_FILE)) { console.log("No manifest found."); return; }
+  if (!existsSync(MANIFEST_FILE)) {
+    console.log("No manifest found.");
+    return;
+  }
   const manifest = JSON.parse(readFileSync(MANIFEST_FILE, "utf-8"));
 
-  const toFix = manifest.filter((e) => e.status === "done" && e.r2Key && (!e.duration || e.duration === "0:00:00"));
+  const toFix = manifest.filter(
+    (e) =>
+      e.status === "done" &&
+      e.r2Key &&
+      (!e.duration || e.duration === "0:00:00"),
+  );
   console.log(`Found ${toFix.length} entries missing duration metadata.\n`);
-  if (!toFix.length) { console.log("Nothing to fix."); return; }
+  if (!toFix.length) {
+    console.log("Nothing to fix.");
+    return;
+  }
 
   let fixed = 0;
   for (let i = 0; i < toFix.length; i++) {
@@ -679,10 +704,16 @@ async function fixMetadata() {
 
 async function run() {
   // ── --verify: cross-check manifest against live R2 bucket ──────────────────
-  if (VERIFY) { await verify(); return; }
+  if (VERIFY) {
+    await verify();
+    return;
+  }
 
   // ── --fix-metadata: backfill duration/size for already-uploaded entries ─────
-  if (FIX_METADATA) { await fixMetadata(); return; }
+  if (FIX_METADATA) {
+    await fixMetadata();
+    return;
+  }
 
   // ── interactive picker: shown for --list-series or when run with no flags ──
   const noActionFlags = !DISCOVER && !DRY_RUN && !SERIES_FILTER && !UPLOAD_ALL;
@@ -846,7 +877,11 @@ async function run() {
     let duration = null;
     try {
       await sleep(DOWNLOAD_DELAY);
-      ({ r2Url, sizeMB, durationSecs, duration } = await downloadAndUpload(pageData.fileId, r2Key, pageData.title));
+      ({ r2Url, sizeMB, durationSecs, duration } = await downloadAndUpload(
+        pageData.fileId,
+        r2Key,
+        pageData.title,
+      ));
       successCount++;
     } catch (err) {
       console.error(`  ERROR uploading: ${err.message}`);
