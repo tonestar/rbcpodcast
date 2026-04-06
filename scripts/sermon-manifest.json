@@ -6974,5 +6974,26 @@
     "sizeMB": 30.5,
     "durationSecs": 2001,
     "duration": "0:33:21"
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/isaiah-53-10-12/",
+    "slug": "isaiah-53-10-12",
+    "title": "Isaiah 53:10-12",
+    "speaker": "Joe Fleener",
+    "date": "6 April, 2026",
+    "series": "Isaiah",
+    "topics": [
+      "Isaiah"
+    ],
+    "fileId": "1fUjijdTTHsqqKqwx7Fjia4O7IgCD69O4",
+    "driveHref": "https://drive.google.com/file/d/1fUjijdTTHsqqKqwx7Fjia4O7IgCD69O4/view?usp=sharing",
+    "sitemapDate": "2026-04-06T10:03:37+12:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/isaiah/2026/isaiah-53-10-12.mp3",
+    "status": "done",
+    "r2Key": "sermons/isaiah/2026/isaiah-53-10-12.mp3",
+    "sizeMB": 21.7,
+    "durationSecs": 1421,
+    "duration": "0:23:41"
   }
 ]
