@@ -188,7 +188,10 @@ const R2 = DRY_RUN
 async function fetchWithRetry(url, options = {}, retries = MAX_RETRIES) {
   const headers = {
     "User-Agent":
-      "Mozilla/5.0 (compatible; sermon-archiver/1.0; +https://github.com/your-repo)",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    Accept:
+      "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-NZ,en;q=0.9",
     ...options.headers,
   };
   for (let attempt = 1; attempt <= retries; attempt++) {
