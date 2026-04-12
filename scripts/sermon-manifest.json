@@ -6995,5 +6995,26 @@
     "sizeMB": 21.7,
     "durationSecs": 1421,
     "duration": "0:23:41"
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/luke-15-1-32/",
+    "slug": "luke-15-1-32",
+    "title": "Luke 15:1-32",
+    "speaker": "Joe Fleener",
+    "date": "12 April, 2026",
+    "series": "Luke",
+    "topics": [
+      "Luke"
+    ],
+    "fileId": "18VbS7dwh59NkpNmSFGa-50MqtYcATdur",
+    "driveHref": "https://drive.google.com/file/d/18VbS7dwh59NkpNmSFGa-50MqtYcATdur/view?usp=sharing",
+    "sitemapDate": "2026-04-12T13:38:33+12:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/luke/2026/luke-15-1-32.mp3",
+    "status": "done",
+    "r2Key": "sermons/luke/2026/luke-15-1-32.mp3",
+    "sizeMB": 36.1,
+    "durationSecs": 2364,
+    "duration": "0:39:24"
   }
 ]
