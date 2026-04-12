@@ -2,8 +2,8 @@ name: Sync Sermons
 
 on:
   schedule:
-    # Monday 6am UTC = Monday 6pm NZ (NZST, UTC+12)
-    - cron: "0 6 * * 1"
+    # Sunday 8pm UTC = Monday 8am NZST (UTC+12) / 9am NZDT (UTC+13)
+    - cron: "0 20 * * 0"
   workflow_dispatch: # allow manual trigger from GitHub UI
 
 permissions:
@@ -42,7 +42,21 @@ jobs:
           R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
 
       - name: Upload new audio to R2
-        run: node scripts/scrape-sermons.mjs --upload-all
+        run: |
+          for attempt in 1 2 3; do
+            echo "--- Upload attempt $attempt/3 ---"
+            node scripts/scrape-sermons.mjs --upload-all
+            if ! grep -q '"status": "error"' scripts/sermon-manifest.json 2>/dev/null; then
+              echo "No errors remaining."
+              break
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "Some entries still errored. Waiting 5 minutes before retry..."
+              sleep 300
+            fi
+          done
+          # Fail the step if errors remain after all retries
+          grep -q '"status": "error"' scripts/sermon-manifest.json && exit 1 || true
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}

@@ -114,12 +114,43 @@ Then reset the entry status to `pending` in `scripts/sermon-manifest.json` and r
 
 ---
 
-## Potential improvements
+## Next steps
 
-- **Custom domain for R2** — connect `audio.rollestonbaptist.org.nz` (or similar) as a Cloudflare custom domain on the R2 bucket to remove the `r2.dev` rate-limit warning. Update `R2_PUBLIC_URL` in `.env` and the GitHub secret, run `--fix-metadata` and `generate --force`, then push.
-- **Per-series cover art** — add `cover` field to episode frontmatter for series-specific artwork in podcast clients.
-- **Rename repo** — rename GitHub repo and local folder from `astropod` to `rbcpodcast`, update git remote.
+### Immediate
+
+- **Commit and push latest changes** — about page, workflow update, Decap removal:
+  ```sh
+  git add -A && git commit -m "feat: improve about page, remove decap, add failure notifications" && git push
+  ```
+- **Fix Luke 14:1-35 duration** — manifest has `durationSecs: null`; backfill then regenerate:
+  ```sh
+  pnpm sermons:fix-metadata && pnpm sermons:generate
+  ```
+- **Re-upload DoG Part 6** — still set to `pending` in manifest with Drive ID override ready; run `pnpm sermons:upload` and pick the _Doctrines of Grace / The Doctrine of God's Love_ series.
+
+### Awaiting external action
+
+- **Apple Podcasts / Spotify approval** — submitted, pending review. Once approved, add subscribe badge links to `src/pages/about.astro`.
+- **Amazon Music** — submit feed at [music.amazon.com/podcasts](https://music.amazon.com/podcasts) once Apple is approved.
+- **Custom domain for R2** — ask RBC if `rollestonbaptist.org.nz` is on Cloudflare. If so, add a CNAME `audio.rollestonbaptist.org.nz` pointing to the R2 bucket (removes the `r2.dev` rate-limit warning). Then:
+  ```sh
+  # Update R2_PUBLIC_URL in scripts/.env AND the GitHub repo secret, then:
+  pnpm sermons:fix-metadata && pnpm sermons:generate --force
+  git add -A && git commit -m "chore: update R2 domain" && git push
+  ```
+
+### Housekeeping
+
+- **Rename local folder** — rename `~/Code/astropod` to `~/Code/rbcpodcast` and update the git remote:
+  ```sh
+  cd ~ && mv Code/astropod Code/rbcpodcast
+  git -C ~/Code/rbcpodcast remote set-url origin https://github.com/tonestar/rbcpodcast.git
+  ```
 - **Bump GitHub Actions Node version** — actions currently use Node 20 runners (deprecated June 2026); update `actions/checkout`, `actions/setup-node`, and `pnpm/action-setup` to versions supporting Node 24 before June 2026.
+
+---
+
+## Potential improvements
 
 ---
 
