@@ -8035,5 +8035,49 @@
     "durationSecs": 2033,
     "duration": "0:33:53",
     "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/session-4-ungodliness-part-1/",
+    "slug": "session-4-ungodliness-part-1",
+    "title": "Session 4 – Ungodliness, Part 1",
+    "speaker": "Joe Fleener",
+    "date": "6 September, 2026",
+    "series": "Respectable Sins",
+    "topics": [
+      "(Topical)"
+    ],
+    "fileId": "1TZgJ8i8xMhMWrNYi4LMdWHzuS1rcS6RV",
+    "driveHref": "https://drive.google.com/file/d/1TZgJ8i8xMhMWrNYi4LMdWHzuS1rcS6RV/view?usp=sharing",
+    "sitemapDate": "2026-09-06T12:51:17+12:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/respectable-sins/2026/session-4-ungodliness-part-1.mp3",
+    "status": "done",
+    "r2Key": "sermons/respectable-sins/2026/session-4-ungodliness-part-1.mp3",
+    "sizeMB": 34.8,
+    "durationSecs": 2278,
+    "duration": "0:37:58",
+    "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-3/",
+    "slug": "psalm-3",
+    "title": "Psalm 3",
+    "speaker": "Joe Fleener",
+    "date": "6 September, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1ARu7BMh3TrPiXLdC0YSW9mfQb1scwyhI",
+    "driveHref": "https://drive.google.com/file/d/1ARu7BMh3TrPiXLdC0YSW9mfQb1scwyhI/view?usp=sharing",
+    "sitemapDate": "2026-09-06T12:52:17+12:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-3.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-3.mp3",
+    "sizeMB": 29.7,
+    "durationSecs": 1943,
+    "duration": "0:32:23",
+    "normalized": true
   }
 ]
