@@ -8079,5 +8079,27 @@
     "durationSecs": 1943,
     "duration": "0:32:23",
     "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-4/",
+    "slug": "psalm-4",
+    "title": "Psalm 4",
+    "speaker": "Joe Fleener",
+    "date": "13 September, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1fcnmgPHbgcF9DdEF1Em7kyS_mwd-wZvH",
+    "driveHref": "https://drive.google.com/file/d/1fcnmgPHbgcF9DdEF1Em7kyS_mwd-wZvH/view?usp=sharing",
+    "sitemapDate": "2026-09-13T12:04:35+12:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-4.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-4.mp3",
+    "sizeMB": 26,
+    "durationSecs": 1706,
+    "duration": "0:28:26",
+    "normalized": true
   }
 ]
