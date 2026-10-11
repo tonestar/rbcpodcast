@@ -8145,5 +8145,71 @@
     "durationSecs": 2127,
     "duration": "0:35:27",
     "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-6/",
+    "slug": "psalm-6",
+    "title": "Psalm 6",
+    "speaker": "Joel Jacob",
+    "date": "11 October, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1Oc9DoPSZKJJnbhgDANh4n3051mHS-Zpk",
+    "driveHref": "https://drive.google.com/file/d/1Oc9DoPSZKJJnbhgDANh4n3051mHS-Zpk/view?usp=sharing",
+    "sitemapDate": "2026-10-11T13:30:18+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-6.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-6.mp3",
+    "sizeMB": 29.6,
+    "durationSecs": 1941,
+    "duration": "0:32:21",
+    "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-7/",
+    "slug": "psalm-7",
+    "title": "Psalm 7",
+    "speaker": "Joel Jacob",
+    "date": "11 October, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1u0zi9eAbalH4eQPC_lCAPZtZo-7194Ll",
+    "driveHref": "https://drive.google.com/file/d/1u0zi9eAbalH4eQPC_lCAPZtZo-7194Ll/view?usp=sharing",
+    "sitemapDate": "2026-10-11T13:31:41+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-7.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-7.mp3",
+    "sizeMB": 30.2,
+    "durationSecs": 1980,
+    "duration": "0:33:00",
+    "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-8/",
+    "slug": "psalm-8",
+    "title": "Psalm 8",
+    "speaker": "Joe Fleener",
+    "date": "11 October, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1GtZQZ3sAFVWi94ObrKQNhBbMvmRo7Ia9",
+    "driveHref": "https://drive.google.com/file/d/1GtZQZ3sAFVWi94ObrKQNhBbMvmRo7Ia9/view?usp=sharing",
+    "sitemapDate": "2026-10-11T13:32:36+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-8.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-8.mp3",
+    "sizeMB": 40.6,
+    "durationSecs": 2660,
+    "duration": "0:44:20",
+    "normalized": true
   }
 ]
