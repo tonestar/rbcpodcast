@@ -8255,5 +8255,49 @@
     "durationSecs": 2434,
     "duration": "0:40:34",
     "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-10/",
+    "slug": "psalm-10",
+    "title": "Psalm 10",
+    "speaker": "Joel Jacob",
+    "date": "1 November, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1GoBPxFf3Uaq1rlpKjve_r1leaqWbfyTx",
+    "driveHref": "https://drive.google.com/file/d/1GoBPxFf3Uaq1rlpKjve_r1leaqWbfyTx/view?usp=sharing",
+    "sitemapDate": "2026-11-01T13:00:30+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-10.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-10.mp3",
+    "sizeMB": 31.6,
+    "durationSecs": 2072,
+    "duration": "0:34:32",
+    "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-11/",
+    "slug": "psalm-11",
+    "title": "Psalm 11",
+    "speaker": "Joe Fleener",
+    "date": "1 November, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1rncCHf4SyGtQr_pyUO40PZQFwomxxwv9",
+    "driveHref": "https://drive.google.com/file/d/1rncCHf4SyGtQr_pyUO40PZQFwomxxwv9/view?usp=sharing",
+    "sitemapDate": "2026-11-01T13:02:05+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-11.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-11.mp3",
+    "sizeMB": 35.3,
+    "durationSecs": 2311,
+    "duration": "0:38:31",
+    "normalized": true
   }
 ]
