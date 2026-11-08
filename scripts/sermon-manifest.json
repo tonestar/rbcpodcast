@@ -8299,5 +8299,49 @@
     "durationSecs": 2311,
     "duration": "0:38:31",
     "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/session-5-pride-part-3/",
+    "slug": "session-5-pride-part-3",
+    "title": "Session 5, Pride – Part 3",
+    "speaker": "Joe Fleener",
+    "date": "8 November, 2026",
+    "series": "Respectable Sins",
+    "topics": [
+      "(Topical)"
+    ],
+    "fileId": "1JG2PveGOCeqNCEjcQYrY9nGkeccyKnWw",
+    "driveHref": "https://drive.google.com/file/d/1JG2PveGOCeqNCEjcQYrY9nGkeccyKnWw/view?usp=sharing",
+    "sitemapDate": "2026-11-08T13:04:12+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/respectable-sins/2026/session-5-pride-part-3.mp3",
+    "status": "done",
+    "r2Key": "sermons/respectable-sins/2026/session-5-pride-part-3.mp3",
+    "sizeMB": 42.3,
+    "durationSecs": 2774,
+    "duration": "0:46:14",
+    "normalized": true
+  },
+  {
+    "url": "https://www.rollestonbaptist.org.nz/messages/psalm-12/",
+    "slug": "psalm-12",
+    "title": "Psalm 12",
+    "speaker": "Joe Fleener",
+    "date": "8 November, 2026",
+    "series": "Psalms",
+    "topics": [
+      "Psalms"
+    ],
+    "fileId": "1MnZubG8au6is0nnO_6Vs_SuCCBz4vCJf",
+    "driveHref": "https://drive.google.com/file/d/1MnZubG8au6is0nnO_6Vs_SuCCBz4vCJf/view?usp=sharing",
+    "sitemapDate": "2026-11-08T13:05:13+13:00",
+    "category": "sermon",
+    "r2Url": "https://pub-78341e7c021e425e874803eed5498bb5.r2.dev/sermons/psalms/2026/psalm-12.mp3",
+    "status": "done",
+    "r2Key": "sermons/psalms/2026/psalm-12.mp3",
+    "sizeMB": 32.6,
+    "durationSecs": 2136,
+    "duration": "0:35:36",
+    "normalized": true
   }
 ]
